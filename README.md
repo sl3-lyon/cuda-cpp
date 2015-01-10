@@ -43,18 +43,7 @@ __host__
 Appel de kernel :
 kernel<<<blocks, threadsParBloc>>>(arguments);
 
-Grille contient blocs, exécutant threads :
-|- Bloc -------------------------------|
-|                                      |
-|  ----------  ----------  ----------  |
-|  | Thread |  | Thread |  | Thread |  |
-|  ----------  ----------  ----------  |
-|                                      |
-|  ----------  ----------  ----------  |
-|  | Thread |  | Thread |  | Thread |  |
-|  ----------  ----------  ----------  |
-|                                      |
-|--------------------------------------|
+Grille contient blocs, exécutant threads
 
 Chaque kernel dispose de variables implicites en lecture seule, toutes de type dim3 (struct avec x, y, z) :
 - blockIdx : index du bloc dans la grille,
